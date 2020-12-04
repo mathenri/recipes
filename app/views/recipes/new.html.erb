@@ -1,0 +1,15 @@
+<h1>New Recipe</h1>
+
+<%= form_with url: recipes_path, local: true do |form| %>
+ 
+  <%= label_tag(:title, "Title:") %>
+  <%= text_field_tag(:title, "Recipe title") %>
+  
+  <%= label_tag(:url, "Url:") %>
+  <%= text_field_tag(:url, "Recipe URL") %>
+ 
+  <%= render 'recipes/tag_checkboxes' %>
+
+  <%= submit_tag("Save") %>
+ 
+<% end %>

@@ -1,0 +1,67 @@
+// Place all the styles related to the Recipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.checkboxes {
+  display: flex;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+  .checkbox {
+    padding: 8px 16px 0 0;
+    input, label {
+      cursor: pointer;
+    }
+    label {
+      color: rgb(40, 40, 40);
+      transition: all 150ms;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+#search-button {
+  color: white;
+  background-color: hsl(210, 100%, 49%);
+  border: 1px solid hsl(210, 100%, 49%);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 150ms;
+  &:hover {
+    background-color: hsl(210, 100%, 35%);
+    border: 1px solid hsl(210, 100%, 35%);
+  }
+}
+
+.recipe {
+  margin-top: 24px;
+  a {
+    display: block;
+    padding-bottom: 4px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .fish {
+    background-color: hsl(219, 28%, 50%);
+  }
+  .vegetarian {
+    background-color: hsl(123, 28%, 43%);
+  }
+  .soup {
+    background-color: hsl(60, 28%, 50%);
+  }
+  .meat {
+    background-color: hsl(10, 28%, 50%);
+  }
+  .remove-button {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
+}

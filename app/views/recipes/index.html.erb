@@ -1,0 +1,19 @@
+<h2>Välj typ av recept</h2>
+<%= form_with(url: recipes_path, method: "get", local: true) do %>
+  <%= render 'recipes/tag_checkboxes' %>
+  <%= submit_tag "Sök", id: "search-button" %>
+<% end %> 
+ 
+<% @recipes.each do |recipe| %>
+  <div class="recipe">   
+    <h2><%= recipe.title %></h2>
+    <a href="http://<%= recipe.url %>"><%= recipe.url %></a>
+    <% for tag in recipe.tags.split(";") do %>
+      <div class="tag <%= tag %>"><%= tag_translations tag %></div>
+    <% end %> 
+    <%= link_to 'Ta bort', recipe_path(recipe),
+          method: :delete,
+          data: { confirm: 'Are you sure?' },
+          class: "remove-button" %>
+  </div>
+<% end %>
