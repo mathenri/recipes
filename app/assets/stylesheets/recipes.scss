@@ -55,8 +55,11 @@
   .vegetarian {
     background-color: hsl(123, 28%, 43%);
   }
-  .soup {
+  .pasta {
     background-color: hsl(60, 28%, 50%);
+  }
+  .soup {
+    background-color: hsl(305, 28%, 50%);
   }
   .meat {
     background-color: hsl(10, 28%, 50%);
@@ -76,4 +79,5 @@ label {
 
 .input-textfield {
   margin-bottom: 6px;
+  padding: 4px 8px;
 }

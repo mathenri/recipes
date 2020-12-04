@@ -4,7 +4,8 @@ module RecipesHelper
       "fish" => "Fisk",
       "meat" => "Kött",
       "soup" => "Soppa",
-      "vegetarian" => "Vegetarisk"
+      "vegetarian" => "Vegetarisk",
+      "pasta" => "Pasta"
     }
     translations[tag_english]
   end
