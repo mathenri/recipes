@@ -1,15 +1,15 @@
-<h1>New Recipe</h1>
+<h2>Lägg till nytt recept</h2>
 
 <%= form_with url: recipes_path, local: true do |form| %>
  
-  <%= label_tag(:title, "Title:") %>
-  <%= text_field_tag(:title, "Recipe title") %>
+  <%= label_tag(:title, "Titel:") %>
+  <%= text_field_tag(:title, "", class: "input-textfield") %>
   
   <%= label_tag(:url, "Url:") %>
-  <%= text_field_tag(:url, "Recipe URL") %>
+  <%= text_field_tag(:url, "", class: "input-textfield") %>
  
   <%= render 'recipes/tag_checkboxes' %>
 
-  <%= submit_tag("Save") %>
+  <%= submit_tag("Spara", class: "submit-button") %>
  
 <% end %>

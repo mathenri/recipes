@@ -1,7 +1,7 @@
 <h2>Välj typ av recept</h2>
 <%= form_with(url: recipes_path, method: "get", local: true) do %>
   <%= render 'recipes/tag_checkboxes' %>
-  <%= submit_tag "Sök", id: "search-button" %>
+  <%= submit_tag "Sök", class: "submit-button" %>
 <% end %> 
  
 <% @recipes.each do |recipe| %>

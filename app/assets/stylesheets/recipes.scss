@@ -16,11 +16,13 @@
       &:hover {
         color: black;
       }
+      font-weight: normal;
+      display: inline;
     }
   }
 }
 
-#search-button {
+.submit-button {
   color: white;
   background-color: hsl(210, 100%, 49%);
   border: 1px solid hsl(210, 100%, 49%);
@@ -64,4 +66,14 @@
     color: black;
     font-size: 10px;
   }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.input-textfield {
+  margin-bottom: 6px;
 }
