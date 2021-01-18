@@ -7,7 +7,7 @@
 <% @recipes.each do |recipe| %>
   <div class="recipe">   
     <h2><%= recipe.title %></h2>
-    <a href="http://<%= recipe.url %>"><%= recipe.url %></a>
+    <a href="<%= recipe.url %>"><%= recipe.url %></a>
     <% for tag in recipe.tags.split(";") do %>
       <div class="tag <%= tag %>"><%= tag_translations tag %></div>
     <% end %> 
